@@ -7,7 +7,7 @@ const SCOPES = ['https://www.googleapis.com/auth/calendar'];
 const TOKEN_PATH = path.join(__dirname, 'token.json');
 
 // Load client secrets from a local file.
-fs.readFile('client_secret_11099880540-oeltnbltlo11maul65vd7cr3qjs9ft0k.apps.googleusercontent.com.json', (err, content) => {
+fs.readFile('', (err, content) => {
   if (err) return console.error('Error loading client secret file:', err);
   authorize(JSON.parse(content), getAccessToken);
 });
@@ -19,7 +19,7 @@ fs.readFile('client_secret_11099880540-oeltnbltlo11maul65vd7cr3qjs9ft0k.apps.goo
  */
 function authorize(credentials, callback) {
   const { client_secret, client_id, redirect_uris } = credentials.web;
-  const oAuth2Client = new google.auth.OAuth2(client_id, client_secret, redirect_uris[0]);
+  const oAuth2Client = // write credentials
 
   // Check if we have previously stored a token.
   fs.readFile(TOKEN_PATH, (err, token) => {
