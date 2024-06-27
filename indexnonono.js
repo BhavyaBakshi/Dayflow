@@ -67,7 +67,7 @@ function parseText(text) {
 
 async function addEventsToCalendar(events) {
   try {
-    const credentialsPath = '/Users/bhavyabakshi/Downloads/calendar-importer/client_secret_11099880540-oeltnbltlo11maul65vd7cr3qjs9ft0k.apps.googleusercontent.com.json';
+    const credentialsPath = '/path/client_secret_11099880540-oeltnbltlo11maul65vd7cr3qjs9ft0k.apps.googleusercontent.com.json';
     console.log('Google Calendar Credentials Path:', credentialsPath);
     const credentials = JSON.parse(fs.readFileSync(credentialsPath));
     const { client_secret, client_id, redirect_uris } = credentials.web;
