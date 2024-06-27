@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayFlow</title>
+</head>
+<body>
+    <h1>Upload Your Calendar</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Select image:</label>
+        <input type="file" id="file" name="file" accept="image/*"><br><br>
+        <label for="topics">Enter topics:</label>
+        <input type="text" id="topics" name="topics" placeholder="E.g., Calculus, Algebra"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
