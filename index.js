@@ -18,8 +18,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY 
 });
 
-const CREDENTIALS_PATH = '/Users/bhavyabakshi/Downloads/calendar-importer/client_secret_11099880540-oeltnbltlo11maul65vd7cr3qjs9ft0k.apps.googleusercontent.com.json';
-  const TOKEN_PATH = '/Users/bhavyabakshi/Downloads/calendar-importer/token.json';
+const CREDENTIALS_PATH = 'path/client_secret_11099880540-oeltnbltlo11maul65vd7cr3qjs9ft0k.apps.googleusercontent.com.json';
+  const TOKEN_PATH = '/path/token.json';
 
 app.post('/upload', upload.single('file'), async (req, res) => {
     const filePath = req.file.path;
